@@ -1,0 +1,44 @@
+#section-home {
+  background-image: url('C:/Users/Work/Documents/My Code/YggdrasilProject/assets/img/background01.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  text-shadow: 1px 1px 1px black;
+  font-family: 'Lobster', cursive;
+}
+
+#section-chef {
+  background-image: url('C:/Users/Work/Documents/My Code/YggdrasilProject/assets/img/background02.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Lobster', cursive;
+  text-shadow: 1px 1px 1px black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /*font-family: 'Permanent Marker', cursive;*/
+}
+
+body {
+
+}
+
+section {
+  padding-top: 3rem;
+}
+
+.menu-tabs {
+  padding-bottom: 15px;
+  padding: 0px;
+}
+
+.menu-tabs li a {
+  padding: 10px 20px;
+  font-size: 12px;
+  display: block;
+  text-transform: uppercase;
+  background: #ffc107;
+  color: black;
+  font-weight: 700;
+}
