@@ -6,20 +6,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <!-- Font Awesome -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- CSS -->
     <link rel="stylesheet" href="assets\css\index.css">
-    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Permanent+Marker" rel="stylesheet">
   </head>
-  <body>
 
-    <body data-spy="scroll" data-target="#navScrollspy">
-      <!-- Navbar -->
-      <nav class="navbar bg-dark navbar-dark navbar-expand-md fixed-top">
+  <body data-spy="scroll" data-target="#navScrollspy">
+
+    <!-- Navbar -->
+    <nav class="navbar bg-dark navbar-dark navbar-expand-md fixed-top">
         <a href="#" class="navbar-brand"><i class="fa fa-coffee" aria-hidden="true"></i> Chaibo</a>
         <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -36,194 +32,407 @@
               <a href="#section-events" class="nav-link">Events</a>
             </li>
             <li class="nav-item">
+              <a href="#section-gallery" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
               <a href="#section-contact" class="nav-link">Contact Us</a>
             </li>
           </ul>
         </div>
       </nav>
-      <!-- Home/header -->
-      <section id="section-home" class="jumbotron jumbotron-fluid d-flex text-warning justify-content-center align-items-center">
+    <!-- Home/header -->
+    <section id="section-home" class="jumbotron-fluid d-flex text-warning justify-content-center align-items-center">
         <div class="container text-center">
-          <h1 class="display-1 text-warning text-uppercase">Chaibo</h1>
-          <p class="display-4 d-none d-sm-block">Share a moment</p>
-          <p class="lead">We serve a delicious menu of light food, including everything from healthy vegetarian options to delicious panini sandwiches made with deli meats and cheeses.</p>
-          <p class="lead">Chaibo has been open since 2010 and was inspired by my passion to assist the revitalization of downtown Fitchburg. It continues to grow and evolve thanks to our many loyal customers.</p>
+          <img class="img-fluid" src="assets/css/img/chaibologo.png" alt="Chaibo">
+          <h1>37 Boulder Dr, Fitchburg MA</h1>
+          <h2>(978) 829-0088</h2>
+          <p class="lead d-none d-sm-block">We serve a delicious menu of light food, including everything from healthy vegetarian options to delicious panini sandwiches made with deli meats and cheeses.</p>
           <a href="#" class="btn btn-lg btn-dark text-warning"><i class="fa fa-cutlery"aria-hidden="true"></i> Order Here</a>
         </div>
       </section>
-      <!-- Menu -->
-      <div class="container">
-        <section id="section-menu">
-          <div class="text-center">
-            <h2 class="display-4">Menu</h2>
-            <div class="mb-30"></div>
+    <!-- Menu -->
+    <section id="section-menu" class="section-padding">
+      <div class="container text-warning">
+        <div class="row">
+          <div class="col-md-12 text-center marb-35" id="option-filters">
+            <h1 class="header-h">Menu</h1>
+            <!-- Needs CSS and JS -->
+            <h3><a class="filter active" data-filter=".menu">Menu</a> | <a class="filter" data-filter=".beer">Beer</a> | <a class="filter" data-filter=".cafe">Cafe</a></h3>
           </div>
-          <div class="row vertical-align-child">
-            <div class="col-md-6">
-              <!-- Item tab list -->
-              <ul class="nav menu-tabs margin-b-30" role="tablist">
-                <li role="presentation" class="nav-item">
-                  <a class="active nav-link" href="#coffee" aria-controls="coffee" role="tab" data-toggle="tab">Coffee</a>
-                </li>
-                <li role="presentation" class="nav-item">
-                  <a class="active nav-link" href="#appetizers" aria-controls="appetizers" role="tab" data-toggle="tab">Appetizers</a>
-                </li>
-                <li role="presentation" class="nav-item">
-                  <a class="active nav-link" href="#d" aria-controls="coffee" role="tab" data-toggle="tab">Paninis & Wraps</a>
-                </li>
-                <li role="presentation" class="nav-item">
-                  <a class="active nav-link" href="#vegetarian" aria-controls="vegetarian" role="tab" data-toggle="tab">Vegetarian</a>
-                </li>
-              </ul>
-              <!-- Items in tabs -->
-              <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane active show fade" id="coffee">
-                      <ul class="list-unstyled">
-                          <!-- Coffee -->
-                          <li class="menu-box clearfix margin-b-20">
-                              <div class="menu-content">
-                                  <h4>Chaibo Coffee <span>$3.00</span></h4>
-                                  <p>Coffee w/ Shot of Espresso</p>
-                              </div>
-                          </li>
-                          <!-- Beer -->
-                          <li class="menu-box clearfix margin-b-20">
-                              <div class="menu-content">
-                                  <h4>Beers <span>$6.00</span></h4>
-                                  <p>Choice of beers</p>
-                              </div>
-                          </li>
-                          <!-- Tea -->
-                          <li class="menu-box clearfix margin-b-20">
-                              <div class="space-30"></div>
-                              <div class="menu-content">
-                                  <h4>Tea <span>$2.00</span></h4>
-                                  <p>Time for Tea</p>
-                              </div>
-                          </li>
-                          <!-- Chocolate Milk -->
-                          <li class="menu-box clearfix margin-b-20">
-                              <div class="menu-content">
-                                  <h4>Chocolate Milk <span>$14.79</span></h4>
-                                  <p>Chocolate and Milk, what else you want?</p>
-                              </div>
-                          </li><!--end menu box-->
-                      </ul>
-                  </div>
-                  <div role="tabpanel" class="tab-pane fade" id="appetizers">
-                      <ul class="list-unstyled">
-                          <li class="menu-box clearfix margin-b-20">
-                              <div class="thumb">
-                                  <img src="assets/img/coffee01.jpg" width="70" class="img-fluid" alt="">
-                              </div>
-                              <div class="menu-content">
-                                  <h4><a href="#">Salad</a> <span>$7.79</span></h4>
-                                  <p>pellentesque enim. Aliquam tempor</p>
-                              </div>
-                          </li><!--end menu box-->
-                          <li class="menu-box clearfix margin-b-20">
-                              <div class="thumb">
-                                  <img src="assets/images/img-3.jpg" width="70" class="img-fluid" alt="">
-                              </div>
-                              <div class="menu-content">
-                                  <h4><a href="#">Sandwiches</a> <span>$14.79</span></h4>
-                                  <p>pellentesque enim. Aliquam tempor</p>
-                              </div>
-                          </li><!--end menu box-->
-                          <li class="menu-box clearfix margin-b-20">
-                              <div class="thumb">
-                                  <img src="assets/images/img-1.jpg" width="70" class="img-fluid" alt="">
-                              </div>
-                              <div class="menu-content">
-                                  <h4><a href="#">Cakes</a> <span>$9.79</span></h4>
-                                  <p>pellentesque enim. Aliquam tempor</p>
-                              </div>
-                          </li><!--end menu box-->
-                          <li class="menu-box clearfix margin-b-20">
-                              <div class="thumb">
-                                  <img src="assets/images/img-8.jpg" width="70" class="img-fluid" alt="">
-                              </div>
-                              <div class="menu-content">
-                                  <h4><a href="#">Appetizers</a> <span>$4.79</span></h4>
-                                  <p>pellentesque enim. Aliquam tempor</p>
-                              </div>
-                          </li><!--end menu box-->
-                      </ul>
-                  </div>
-                  <div role="tabpanel" class="tab-pane fade" id="dinner">
-                      <ul class="list-unstyled">
-                          <li class="menu-box clearfix margin-b-20">
-                              <div class="thumb">
-                                  <img src="assets/images/img-9.jpg" width="70" class="img-fluid" alt="">
-                              </div>
-                              <div class="menu-content">
-                                  <h4><a href="#">Rice &amp; Flesh</a> <span>$8.79</span></h4>
-                                  <p>pellentesque enim. Aliquam tempor</p>
-                              </div>
-                          </li><!--end menu box-->
-                          <li class="menu-box clearfix margin-b-20">
-                              <div class="thumb">
-                                  <img src="assets/images/img-6.jpg" width="70" class="img-fluid" alt="">
-                              </div>
-                              <div class="menu-content">
-                                  <h4><a href="#">Seafood</a> <span>$11.79</span></h4>
-                                  <p>pellentesque enim. Aliquam tempor</p>
-                              </div>
-                          </li><!--end menu box-->
-                          <li class="menu-box clearfix margin-b-20">
-                              <div class="thumb">
-                                  <img src="assets/images/img-5.jpg" width="70" class="img-fluid" alt="">
-                              </div>
-                              <div class="menu-content">
-                                  <h4><a href="#">Chicken</a> <span>$6.79</span></h4>
-                                  <p>pellentesque enim. Aliquam tempor</p>
-                              </div>
-                          </li><!--end menu box-->
-                          <li class="menu-box clearfix margin-b-20">
-                              <div class="thumb">
-                                  <img src="assets/images/img-4.jpg" width="70" class="img-fluid" alt="">
-                              </div>
-                              <div class="menu-content">
-                                  <h4><a href="#">Veal &amp; Beef</a> <span>$9.79</span></h4>
-                                  <p>pellentesque enim. Aliquam tempor</p>
-                              </div>
-                          </li><!--end menu box-->
-                      </ul>
-                  </div>
+
+          <!-- Cafe Menu -->
+          <div class="col-md-12 text-center menu" id="menu-filters">
+            <ul>
+              <li><a class="filter active" data-filter=".sandwich">Sandwiches</a></li>
+              <li><a class="filter" data-filter=".flatbread">Flatbreads</a></li>
+              <li><a class="filter" data-filter=".quesadilla">Quesadilla</a></li>
+              <li><a class="filter" data-filter=".plates">Plates</a></li>
+              <li><a class="filter" data-filter=".salad">Salads</a></li>
+              <li><a class="filter" data-filter=".fondue">Fondue</a></li>
+              <li><a class="filter" data-filter=".dessert">Desserts</a></li>
+            </ul>
+          </div>
+          <!-- Menu -->
+          <div>
+            <!-- Sandwiches -->
+            <div>
+              <p class="header-p text-center sandwich menu-header">ALL Sandwiches served with Boar’s Head Premium Meats & Cheese & Artisan Bread <br>
+                Add $.75 for Veggie potato chips <br> Add $.50 Lays potato chips</p>
+              <div class="sandwich menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Black beards Panini</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$8.75</span>
+                </span>
+                <span class="menu-subtitle">Black Pastrami, Melted Canadian Cheddar, Hot Pepper Relish & Pesto</span>
+              </div>
+
+              <div class="sandwich menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Rasta’s Roast Beef Panini</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$8.75</span>
+                </span>
+                <span class="menu-subtitle">Premium Roast Beef, Bleu Cheese Crumbles, Bacon, Pesto, Tomato & Seasoned Oil</span>
+              </div>
+
+              <div class="sandwich menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Cracked “He’s Nuts” Panini</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$7.50</span>
+                </span>
+                <span class="menu-subtitle">Cracked Peppermill Turkey, Melted American Cheese, Red Onion, Mayo & Spicy Brown Mustard</span>
+              </div>
+
+              <div class="sandwich menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Buffalo Chicken Panini</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$8.50</span>
+                </span>
+                <span class="menu-subtitle">Breaded Buffalo Chicken with Bleu Cheese Crumbles & Bleu Cheese dressing</span>
+              </div>
+
+              <div class="sandwich menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Whitie’s Panini</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$8.50</span>
+                </span>
+                <span class="menu-subtitle">All White Meat Chicken Salad, Crispy Bacon with a Hint of Honey Mustard</span>
+              </div>
+
+              <div class="sandwich menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Ruben Panini</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$8.00</span>
+                </span>
+                <span class="menu-subtitle">Premium Black Pastrami, Swiss Cheese, Sauerkraut & Thousand Island Dressing</span>
+              </div>
+
+              <div class="sandwich menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Veggie Panini</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$6.75</span>
+                </span>
+                <span class="menu-subtitle">Baby Spinach, Pesto, Cucumber Slices, Tomato, Green Peppers, Seasoned Oil & Provolone Cheese</span>
+              </div>
+
+              <div class="sandwich menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Grilled Cheese Panini</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$5.75</span>
+                </span>
+                <span class="menu-subtitle">The Classic! Your choice of American, Swiss, Provolone or Cheddar</span>
+              </div>
+
+              <div class="sandwich menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Eggplant Parmesan Panini</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$8.00</span>
+                </span>
+                <span class="menu-subtitle">Breaded Eggplant, Marinara Sauce & Mozzarella Cheese</span>
+              </div>
+
+              <div class="sandwich menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Hummus Panini</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$6.75</span>
+                </span>
+                <span class="menu-subtitle">Hummus, Cucumber, Apple Slices, Shredded Carrots & Honey Mustard!</span>
+              </div>
+
+              <div class="sandwich menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Caprese Panini</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$6.75</span>
+                </span>
+                <span class="menu-subtitle">Tomato, Mozzarella Cheese, Basil, Mayo, Balsamic Vinaigrette & Black Pepper</span>
+              </div>
+
+              <div class="sandwich menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Quinoa Wrap</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$6.50</span>
+                </span>
+                <span class="menu-subtitle">Quinoa, Black Beans, Sweet Corn, Green Pepper & Onion</span>
+              </div>
+            </div>
+            <!-- Flatbreads -->
+            <div>
+              <p class="header-p text-center flatbread menu-header"> Flatbreads ands Stuff</p>
+              <div class="flatbread menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+              </div>
+
+              <div class="flatbread menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+              </div>
+              <div class="flatbread menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+              </div>
+
+              <div class="flatbread menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+              </div>
+            </div>
+            <!-- Quesadilla -->
+            <div>
+              <div class="quesadilla menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+              </div>
+              <div class="quesadilla menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+              </div>
+              <div class="quesadilla menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+              </div>
+              <div class="quesadilla menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+              </div>
+            </div>
+            <!-- Plates -->
+            <div>
+              <div class="plates menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+              </div>
+              <div class="plates menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+              </div>
+              <div class="plates menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+              </div>
+              <div class="plates menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+              </div>
+            </div>
+            <!-- Salads -->
+            <div>
+              <div class="salad menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+              </div>
+
+              <div class="salad menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+              </div>
+              <div class="salad menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+              </div>
+
+              <div class="salad menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+              </div>
+            </div>
+            <!-- Fondue -->
+            <div>
+              <div class="fondue menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+              </div>
+
+              <div class="fondue menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+              </div>
+
+              <div class="fondue menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+              </div>
+
+              <div class="fondue menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+              </div>
+            </div>
+            <!-- Desserts -->
+            <div>
+              <div class="dessert menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+              </div>
+
+              <div class="dessert menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+              </div>
+
+              <div class="dessert menu-restaurant">
+                <span class="clearfix">
+                  <a class="menu-title">Food Item Name</a>
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-price">$20.99</span>
+                </span>
+                <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </div>
-      <!-- Random Info -->
-      <section id="section-chef" class="jumbotron jumbotron-fluid d-flex text-warning justify-content-center align-items-center">
-        <div class="row">
-          <div class="col-md-8 offset-md-2 text-center">
-            <h1>Best Chef in Town</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius a ante ac facilisis. Phasellus fermentum iaculis ligula eu vestibulum. Sed sit amet mi imperdiet, pretium enim in, viverra sapien. Mauris sit amet venenatis risus. Aliquam commodo quam a facilisis convallis. Morbi id lacus arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque aliquet auctor est, ac aliquet sapien iaculis eu.</p>
-            <p>Donec a leo posuere, elementum leo molestie, egestas velit. Duis turpis velit, commodo ut augue in, hendrerit gravida urna. Proin ipsum orci, blandit ut ullamcorper eget, accumsan in quam. Ut dictum dui risus, et cursus tellus ultricies vel. Maecenas posuere elit sem, a porta sem feugiat sed. Aliquam ut vestibulum lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla rutrum ornare orci vel pulvinar. </p>
+    </section>
+    <!-- Events -->
+    <section id="section-events" class="d-flex text-warning justify-content-center align-items-center section-padding">
+        <div class="row text-center">
+          <div class="col-12 col-md-6">
+            <h2>Friday Nights Open Mic</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum justo eu nisl suscipit consequat.</p>
+          </div>
+          <div class="col-12 col-md-6">
+            <h2>Saturday Night Live Music</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum justo eu nisl suscipit consequat.</p>
+          </div>
+          <div class="col-md-8 offset-md-2">
+            <h2>Sunday Private Events</h2>
+            <p>Call in to schedule a private event on Sundays.</p>
           </div>
         </div>
       </section>
-      <!-- Events -->
-      <section id="section-events">
-        <div class="text-center">
-          <h2>Upcoming Events</h2>
+    <!-- Gallery -->
 
-        </div>
-      </section>
-      <!-- Footer -->
-      <footer id="section-contact" class="bg-dark">
-        <div class="container py-3 py-sm-5">
+    <!-- Footer -->
+    <footer id="section-contact" class="bg-dark text-white">
+      <div class="container py-3 py-sm-5">
         <!-- Footer Links -->
         <div class="row">
           <div class="col-12 col-sm-4 col-lg-4">
-            <h6>Hours:</h6>
-            <ul class="list-unstyled text-white">
-              <li>Monday - Wednesday</li>
-              <li>Thursday</li>
-              <li>Friday & Saturday</li>
-              <li>Sunday</li>
+            <h6 class="text-center">Hours</h6>
+            <ul class="list-unstyled">
+              <li>Mon - Wed <span class="pull-right">11AM - 9PM</span></li>
+              <li>Thursday <span class="pull-right">11AM - 10PM</span></li>
+              <li>Fri - Sat <span class="pull-right">11AM - 11PM</span></li>
+              <li>Sunday <span class="pull-right">Private Events</span></li>
             </ul>
           </div>
           <div class="col-12 col-sm-4 col-lg-4 text-center text-white">
@@ -232,30 +441,33 @@
               <strong>Chaibo</strong><br>
               37 Boulder Drive,<br>
               Fitchburg, MA 01420<br>
-              <i class="fa fa-fw fa-phone" aria-hidden="true"></i><spanclass="sr-only"> Telephone: </span><a href="tel:+19788290088">(978) 829-0088</a>
+              <i class="fa fa-fw fa-phone" aria-hidden="true"></i><span class="sr-only"> Telephone: </span><a href="tel:+19788290088">(978) 829-0088</a>
             </address>
           </div>
           <div class="col-12 col-sm-4 col-lg-4">
             <h6>Follow Us:</h6>
             <ul class="list-unstyled">
-              <li><a href="#"><i class="fa fa-fw fa-facebook"aria-hidden="true"></i> Facebook</a></li>
+              <li><a href="https://www.facebook.com/chaibo.fitchburg?fref=ts"><i class="fa fa-fw fa-facebook"aria-hidden="true"></i> Facebook</a></li>
               <li><a href="#"><i class="fa fa-fw fa-instagram"aria-hidden="true"></i> Instagram</a></li>
-              <li><a href="#"><i class="fa fa-fw fa-twitter"aria-hidden="true"></i> Twitter</a></li>
+              <li><a href="https://twitter.com/cafechaibo"><i class="fa fa-fw fa-twitter"aria-hidden="true"></i> Twitter</a></li>
             </ul>
           </div>
         </div>
       </div>
-      </footer>
+    </footer>
+
+
     <!-- Optional JavaScript -->
-    <script src="assets/js/index.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/index.js" charset="utf-8"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js" integrity="sha256-MMt0/21G3z0Zg4ET1kI3HC9npItDowkitRDVr0FhCxA=" crossorigin="anonymous"></script>
-    <script> $(function () {
+    <script src="assets/js/index.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      // Add smooth scrolling to all links in navbar
       var scroll = new SmoothScroll('a[href*="#section-"]');
-    });
     </script>
   </body>
 </html>
